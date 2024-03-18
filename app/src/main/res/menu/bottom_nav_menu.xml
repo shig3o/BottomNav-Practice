@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/list2d"
+        android:title="2D Shape"
+        android:icon="@drawable/outline_square_24"/>
+    <item
+        android:id="@+id/list3d"
+        android:title="3D Shape"
+        android:icon="@drawable/cube"/>
+    <item
+        android:id="@+id/profile"
+        android:title="Profiles"
+        android:icon="@drawable/round_person_pin_24"/>
+</menu>
