@@ -6,12 +6,6 @@
     tools:context=".fragment.List2dFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:id="@+id/heading"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="2D Shape"
-        android:gravity="center"
-        android:textSize="30sp"/>
+
 
 </FrameLayout>
