@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.ListProfileFragment">
+    tools:context=".fragment.ListProfileFragment"
+    android:background="#181B20">
 
     <!-- TODO: Update blank fragment layout -->
     <RelativeLayout
@@ -11,11 +12,34 @@
         android:layout_height="match_parent"
         tools:context=".ListSiswa10PPLG1">
 
-        <androidx.recyclerview.widget.RecyclerView
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/poppins_medium"
+            android:text="List Siswa"
+            android:textSize="40sp"
+            android:textColor="@color/white"/>
+
+
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/RVListPepeleg"/>
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="10dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RVListPepeleg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </ScrollView>
 
     </RelativeLayout>
+
 
 </FrameLayout>
