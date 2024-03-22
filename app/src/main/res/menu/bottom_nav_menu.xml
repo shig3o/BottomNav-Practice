@@ -7,7 +7,7 @@
     <item
         android:id="@+id/list3d"
         android:title="Bangun Ruang"
-        android:icon="@drawable/cube"/>
+        android:icon="@drawable/ku"/>
     <item
         android:id="@+id/profile"
         android:title="Profil Siswa"
