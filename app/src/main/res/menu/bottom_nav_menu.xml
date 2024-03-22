@@ -3,7 +3,7 @@
     <item
         android:id="@+id/list2d"
         android:title="Bangun Datar"
-        android:icon="@drawable/persegi"/>
+        android:icon="@drawable/segitiga"/>
     <item
         android:id="@+id/list3d"
         android:title="Bangun Ruang"
