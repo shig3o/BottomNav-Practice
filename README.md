@@ -1,8 +1,6 @@
-I MIGHT BE WRONG
-(kayanya pak aji ga nyuruh bikin recycler view)
-
 TODO LIST (yang tersisa)
 
-- Ubah cardview
+- Ubah cardview jadi profile menu (salah ternyata)
 	- nama, email, pfp, logout button
-- Tambah luas ke bangun datar & ruang (?)
+- Tambah kalkulator luas ke bangun datar & ruang
+- Tambah login page
