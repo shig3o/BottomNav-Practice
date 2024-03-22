@@ -3,11 +3,11 @@
     <item
         android:id="@+id/list2d"
         android:title="Bangun Datar"
-        android:icon="@drawable/outline_square_24"/>
+        android:icon="@drawable/persegi"/>
     <item
         android:id="@+id/list3d"
         android:title="Bangun Ruang"
-        android:icon="@drawable/ku"/>
+        android:icon="@drawable/kubus"/>
     <item
         android:id="@+id/profile"
         android:title="Profil Siswa"

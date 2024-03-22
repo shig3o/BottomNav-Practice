@@ -181,7 +181,8 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/lingkaran"/>
+                        android:src="@drawable/lingkaran"
+                        android:layout_marginBottom="5dp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -218,7 +219,7 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/outline_square_white"/>
+                        android:src="@drawable/jajargenjang"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -255,7 +256,7 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/outline_square_white"/>
+                        android:src="@drawable/trapesium"/>
 
                     <TextView
                         android:layout_width="wrap_content"
