@@ -1,3 +1,6 @@
+I MIGHT BE WRONG
+(kayanya pak aji ga nyuruh bikin recycler view)
+
 TODO LIST (yang tersisa)
 
 - Ubah cardview
