@@ -10,7 +10,7 @@ import android.os.Bundle;
 import com.example.bottomnavlatihan.databinding.ActivityMainBinding;
 import com.example.bottomnavlatihan.fragment.List2dFragment;
 import com.example.bottomnavlatihan.fragment.List3dFragment;
-import com.example.bottomnavlatihan.fragment.ListProfileFragment;
+import com.example.bottomnavlatihan.fragment.ProfileFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
             } else if (itemId == R.id.profile) {
 
-                replaceFragment(new ListProfileFragment());
+                replaceFragment(new ProfileFragment());
 
             }
 

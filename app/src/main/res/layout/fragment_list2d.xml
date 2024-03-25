@@ -12,18 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:layout_marginTop="-50dp"
-            android:background="@drawable/shape2d_image" />
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:background="@drawable/shadoweffect"
-            android:layout_marginTop="-50dp"
-            />
+
 
         <TextView
             android:id="@+id/heading"
@@ -37,6 +26,11 @@
             android:gravity="center"
             android:layout_marginTop="40dp"
             android:textColor="@color/white" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/gridbg"/>
         
         <GridLayout
             android:layout_width="match_parent"
