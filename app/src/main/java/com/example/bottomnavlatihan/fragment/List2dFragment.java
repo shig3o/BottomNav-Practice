@@ -15,12 +15,13 @@ import com.example.bottomnavlatihan.KalkulatorLingkaran;
 import com.example.bottomnavlatihan.KalkulatorPersegi;
 import com.example.bottomnavlatihan.KalkulatorPersegiP;
 import com.example.bottomnavlatihan.KalkulatorSegitiga;
+import com.example.bottomnavlatihan.KalkulatorTrapesium;
 import com.example.bottomnavlatihan.MainActivity;
 import com.example.bottomnavlatihan.R;
 
 
 public class List2dFragment extends Fragment {
-    CardView persegi, persegiPanjang, segitiga, lingkaran, trapesium, jajargenjang;
+    CardView persegi, persegiPanjang, segitiga, lingkaran, jajargenjang, trapesium;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -30,8 +31,9 @@ public class List2dFragment extends Fragment {
         persegiPanjang = view.findViewById(R.id.persegi_panjang);
         segitiga = view.findViewById(R.id.segitiga);
         lingkaran = view.findViewById(R.id.lingkaran);
-        trapesium = view.findViewById(R.id.trapesium);
         jajargenjang = view.findViewById(R.id.jajargenjang);
+        trapesium = view.findViewById(R.id.trapesium);
+
 
         persegi.setOnClickListener(v -> {
             Intent intent = new Intent(getActivity(), KalkulatorPersegi.class);
@@ -55,6 +57,11 @@ public class List2dFragment extends Fragment {
 
         jajargenjang.setOnClickListener(v -> {
             Intent intent = new Intent(getActivity(), KalkulatorJajargenjang.class);
+            startActivity(intent);
+        });
+
+        trapesium.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), KalkulatorTrapesium.class);
             startActivity(intent);
         });
         return view;
