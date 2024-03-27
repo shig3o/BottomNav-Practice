@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 
 import com.example.bottomnavlatihan.KalkulatorPersegi;
 import com.example.bottomnavlatihan.KalkulatorPersegiP;
+import com.example.bottomnavlatihan.KalkulatorSegitiga;
 import com.example.bottomnavlatihan.MainActivity;
 import com.example.bottomnavlatihan.R;
 
@@ -25,6 +26,7 @@ public class List2dFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_list2d, container, false);
         persegi = view.findViewById(R.id.persegi);
         persegiPanjang = view.findViewById(R.id.persegi_panjang);
+        segitiga = view.findViewById(R.id.segitiga);
 
         persegi.setOnClickListener(v -> {
             Intent intent = new Intent(getActivity(), KalkulatorPersegi.class);
@@ -33,6 +35,11 @@ public class List2dFragment extends Fragment {
 
         persegiPanjang.setOnClickListener(v -> {
             Intent intent = new Intent(getActivity(), KalkulatorPersegiP.class);
+            startActivity(intent);
+        });
+
+        segitiga.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), KalkulatorSegitiga.class);
             startActivity(intent);
         });
         return view;
