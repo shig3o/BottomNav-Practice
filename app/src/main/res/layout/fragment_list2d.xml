@@ -42,6 +42,7 @@
             >
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/persegi"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 app:cardCornerRadius="15dp"
@@ -64,7 +65,8 @@
                         android:layout_height="80dp"
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/persegi"
-                        android:layout_marginBottom="10dp"/>
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"/>
 
                     <TextView
                         android:layout_width="wrap_content"

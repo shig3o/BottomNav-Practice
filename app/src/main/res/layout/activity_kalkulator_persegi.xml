@@ -38,7 +38,7 @@
     
     <EditText
         android:id="@+id/input1"
-        android:hint="Masukkan sisi ..."
+        android:hint="Masukkan sisi ... (cm)"
         android:textColorHint="#AEFFFFFF"
         android:textAlignment="center"
         android:fontFamily="@font/poppins_medium"
@@ -49,6 +49,7 @@
         app:layout_constraintBottom_toTopOf="@id/info1"
         app:layout_constraintLeft_toLeftOf="parent"
         android:backgroundTint="@color/white"
+        android:inputType="number"
         />
 
     <TextView
@@ -91,15 +92,37 @@
         android:fontFamily="@font/poppins_bold"
         app:layout_constraintTop_toBottomOf="@id/result"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/backButton"
         app:layout_constraintLeft_toLeftOf="parent"
         android:elevation="10dp"
         />
 
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        app:cornerRadius="10dp"
+        android:textSize="20sp"
+        android:backgroundTint="#3C000000"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintTop_toBottomOf="@id/calculateButton"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        />
+
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/gridbg"
-        android:translationZ="-1"/>
+        android:layout_width="800dp"
+        android:layout_height="1010dp"
+        android:src="@drawable/gridbg2"
+        android:translationZ="-1px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

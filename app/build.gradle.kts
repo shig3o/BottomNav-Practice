@@ -32,7 +32,6 @@ android {
 }
 
 dependencies {
-    implementation ("androidx.constraintlayout:constraint-layout:2.1.0-alpha2")
     implementation ("com.google.android.material:material:1.4.0")
     implementation ("androidx.cardview:cardview:1.0.0")
     implementation ("com.github.bumptech.glide:glide:4.16.0")
