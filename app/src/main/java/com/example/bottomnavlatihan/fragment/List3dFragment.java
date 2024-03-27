@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.bottomnavlatihan.KalkulatorBalok;
 import com.example.bottomnavlatihan.KalkulatorKubus;
 import com.example.bottomnavlatihan.KalkulatorPersegi;
 import com.example.bottomnavlatihan.R;
@@ -31,6 +32,11 @@ public class List3dFragment extends Fragment {
 
         kubus.setOnClickListener(v -> {
             Intent intent = new Intent(getActivity(), KalkulatorKubus.class);
+            startActivity(intent);
+        });
+
+        balok.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), KalkulatorBalok.class);
             startActivity(intent);
         });
 
