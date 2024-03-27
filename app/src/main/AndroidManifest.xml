@@ -15,6 +15,9 @@
         android:theme="@style/Theme.BottomNavLatihan"
         tools:targetApi="31">
         <activity
+            android:name=".KalkulatorPersegiP"
+            android:exported="false" />
+        <activity
             android:name=".KalkulatorPersegi"
             android:exported="true" />
         <activity

@@ -18,9 +18,10 @@
             android:id="@+id/heading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_medium"
+            android:fontFamily="@font/bodoni_bold_italic"
+            android:letterSpacing="-0.1"
             android:text="Bangun Datar"
-            android:textSize="40sp"
+            android:textSize="45sp"
             android:textAlignment="center"
             android:layout_centerHorizontal="true"
             android:gravity="center"
@@ -82,6 +83,7 @@
 
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
+                android:id="@+id/persegi_panjang"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 app:cardCornerRadius="15dp"

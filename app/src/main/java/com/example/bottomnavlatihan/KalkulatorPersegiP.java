@@ -10,27 +10,33 @@ import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 
-public class KalkulatorPersegi extends AppCompatActivity implements View.OnClickListener {
+public class KalkulatorPersegiP extends AppCompatActivity implements View.OnClickListener {
     Button calculate, back;
-    EditText input;
-    TextView info, result;
-    int num;
+    EditText input1, input2;
+    TextView info1, info2, result;
+    int num1, num2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_kalkulator_persegi);
+        setContentView(R.layout.activity_kalkulator_persegi_p);
 
         calculate = findViewById(R.id.calculateButton);
-        input = findViewById(R.id.input1);
-        info = findViewById(R.id.info1);
+        input1 = findViewById(R.id.input1);
+        input2 = findViewById(R.id.input2);
+        info1 = findViewById(R.id.info1);
+        info2 = findViewById(R.id.info2);
         result = findViewById(R.id.result);
         back = findViewById(R.id.backButton);
 
         calculate.setOnClickListener(this);
         back.setOnClickListener(this);
     }
+
     public int getIntFromInput(EditText input) {
         if (input.getText().toString().equals("")) {
             Toast.makeText(this, "Masukkan nomor!", Toast.LENGTH_SHORT).show();
@@ -43,12 +49,19 @@ public class KalkulatorPersegi extends AppCompatActivity implements View.OnClick
     public void onClick(View view) {
 
         if (view.getId() == R.id.calculateButton) {
-            num = getIntFromInput(input);
-            info.setText("s = " + num +"cm");
-            result.setText("L = " + (num * num)+ "cm^2");
+            num1 = getIntFromInput(input1);
+            num2 = getIntFromInput(input2);
+
+            info1.setText("p = " + num1 +"cm");
+            info2.setText("ℓ = " + num2 +"cm");
+            result.setText("L = " + calculate(num1, num2)+ "cm^2");
         } else if (view.getId() == R.id.backButton) {
-            Intent intent = new Intent(KalkulatorPersegi.this, MainActivity.class);
+            Intent intent = new Intent(KalkulatorPersegiP.this, MainActivity.class);
             startActivity(intent);
         }
+    }
+
+    private int calculate(int num1, int num2) {
+        return num1 * num2;
     }
 }
