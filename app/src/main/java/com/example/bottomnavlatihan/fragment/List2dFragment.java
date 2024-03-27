@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.bottomnavlatihan.KalkulatorLingkaran;
 import com.example.bottomnavlatihan.KalkulatorPersegi;
 import com.example.bottomnavlatihan.KalkulatorPersegiP;
 import com.example.bottomnavlatihan.KalkulatorSegitiga;
@@ -27,6 +28,9 @@ public class List2dFragment extends Fragment {
         persegi = view.findViewById(R.id.persegi);
         persegiPanjang = view.findViewById(R.id.persegi_panjang);
         segitiga = view.findViewById(R.id.segitiga);
+        lingkaran = view.findViewById(R.id.lingkaran);
+        trapesium = view.findViewById(R.id.trapesium);
+        jajargenjang = view.findViewById(R.id.jajargenjang);
 
         persegi.setOnClickListener(v -> {
             Intent intent = new Intent(getActivity(), KalkulatorPersegi.class);
@@ -40,6 +44,11 @@ public class List2dFragment extends Fragment {
 
         segitiga.setOnClickListener(v -> {
             Intent intent = new Intent(getActivity(), KalkulatorSegitiga.class);
+            startActivity(intent);
+        });
+
+        lingkaran.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), KalkulatorLingkaran.class);
             startActivity(intent);
         });
         return view;

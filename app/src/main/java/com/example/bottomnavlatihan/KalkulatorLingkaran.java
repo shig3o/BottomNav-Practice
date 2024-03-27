@@ -10,8 +10,12 @@ import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 
-public class KalkulatorPersegi extends AppCompatActivity implements View.OnClickListener {
+public class KalkulatorLingkaran extends AppCompatActivity implements View.OnClickListener {
+
     Button calculate, back;
     EditText input;
     TextView info, result;
@@ -20,7 +24,7 @@ public class KalkulatorPersegi extends AppCompatActivity implements View.OnClick
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_kalkulator_persegi);
+        setContentView(R.layout.activity_kalkulator_lingkaran);
 
         calculate = findViewById(R.id.calculateButton);
         input = findViewById(R.id.input1);
@@ -44,15 +48,19 @@ public class KalkulatorPersegi extends AppCompatActivity implements View.OnClick
 
         if (view.getId() == R.id.calculateButton) {
             num = getIntFromInput(input);
-            info.setText("s = " + num +"cm");
+            info.setText("r = " + num +"cm");
             result.setText("L = " + calculate(num)+ "cm^2");
         } else if (view.getId() == R.id.backButton) {
-            Intent intent = new Intent(KalkulatorPersegi.this, MainActivity.class);
+            Intent intent = new Intent(KalkulatorLingkaran.this, MainActivity.class);
             startActivity(intent);
         }
     }
 
     private double calculate(int num) {
-        return num * num;
+        if (num % 7 == 0) {
+            return 22 * (num/7) * num;
+        } else {
+            return 3.14 * num * num;
+        }
     }
 }
