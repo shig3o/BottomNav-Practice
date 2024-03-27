@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.bottomnavlatihan.KalkulatorJajargenjang;
 import com.example.bottomnavlatihan.KalkulatorLingkaran;
 import com.example.bottomnavlatihan.KalkulatorPersegi;
 import com.example.bottomnavlatihan.KalkulatorPersegiP;
@@ -49,6 +50,11 @@ public class List2dFragment extends Fragment {
 
         lingkaran.setOnClickListener(v -> {
             Intent intent = new Intent(getActivity(), KalkulatorLingkaran.class);
+            startActivity(intent);
+        });
+
+        jajargenjang.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), KalkulatorJajargenjang.class);
             startActivity(intent);
         });
         return view;
