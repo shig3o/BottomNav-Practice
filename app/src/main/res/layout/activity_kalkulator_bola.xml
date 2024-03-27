@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KalkulatorBola"
+    android:background="#181B20">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volume Bola"
+        android:textColor="@color/white"
+        android:fontFamily="@font/bodoni_bold_italic"
+        android:textSize="48sp"
+        android:letterSpacing="-0.08"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/imageHeading"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageHeading"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/bola"
+        app:layout_constraintTop_toBottomOf="@id/heading"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/input1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="-100dp"
+        />
+
+    <EditText
+        android:id="@+id/input1"
+        android:hint="Masukkan radius ... (cm)"
+        android:textColorHint="#AEFFFFFF"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/imageHeading"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/info1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:backgroundTint="@color/white"
+        android:inputType="number"
+        />
+
+    <TextView
+        android:id="@+id/info1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="r ="
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/bodoni_italic"
+        app:layout_constraintTop_toBottomOf="@id/input1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/result"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="L ="
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/bodoni_italic"
+        app:layout_constraintTop_toBottomOf="@id/info1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/calculateButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        app:cornerRadius="10dp"
+        android:textSize="20sp"
+        android:backgroundTint="@color/white"
+        android:textColor="#292424"
+        android:fontFamily="@font/poppins_bold"
+        app:layout_constraintTop_toBottomOf="@id/result"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/backButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:elevation="10dp"
+        />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        app:cornerRadius="10dp"
+        android:textSize="20sp"
+        android:backgroundTint="#3C000000"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintTop_toBottomOf="@id/calculateButton"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        android:drawableLeft="@drawable/baseline_arrow_back_ios_24"
+        />
+
+    <ImageView
+        android:layout_width="800dp"
+        android:layout_height="1010dp"
+        android:src="@drawable/gridbg2"
+        android:translationZ="-1px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

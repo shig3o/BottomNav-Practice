@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.bottomnavlatihan.KalkulatorBalok;
+import com.example.bottomnavlatihan.KalkulatorBola;
 import com.example.bottomnavlatihan.KalkulatorKerucut;
 import com.example.bottomnavlatihan.KalkulatorKubus;
 import com.example.bottomnavlatihan.KalkulatorPersegi;
@@ -43,6 +44,11 @@ public class List3dFragment extends Fragment {
 
         kerucut.setOnClickListener(v -> {
             Intent intent = new Intent(getActivity(), KalkulatorKerucut.class);
+            startActivity(intent);
+        });
+
+        bola.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), KalkulatorBola.class);
             startActivity(intent);
         });
 
