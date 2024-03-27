@@ -21,7 +21,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        replaceFragment(new List2dFragment());
+
+        String fragmentName = getIntent().getStringExtra("fragment");
+        Fragment fragment = null;
+
+        if ("list3d".equals(fragmentName)) {
+            fragment = new List3dFragment();
+            binding.bottomNav.setSelectedItemId(R.id.list3d);
+        } else {
+            // Default fragment if no specific fragment is requested
+            fragment = new List2dFragment();
+        }
+
+        replaceFragment(fragment);
 
         binding.bottomNav.setOnItemSelectedListener(item -> {
             int itemId = item.getItemId();

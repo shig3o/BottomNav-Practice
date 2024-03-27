@@ -15,6 +15,9 @@
         android:theme="@style/Theme.BottomNavLatihan"
         tools:targetApi="31">
         <activity
+            android:name=".KalkulatorKubus"
+            android:exported="false" />
+        <activity
             android:name=".KalkulatorTrapesium"
             android:exported="false" />
         <activity
