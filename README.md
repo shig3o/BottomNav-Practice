@@ -1,6 +1,7 @@
-TODO LIST (yang tersisa)
+TODO 
+-
+*project is finished i think*
 
-- Ubah cardview jadi profile menu (salah ternyata)
-	- nama, email, pfp, logout button
-- Tambah kalkulator luas ke bangun datar & ruang
-- Tambah login page
+Accounts
+1. username: DudiSunshine, password: password123
+2. username: RealPandaYorke, password: 123password
