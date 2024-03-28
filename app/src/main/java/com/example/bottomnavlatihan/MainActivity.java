@@ -5,7 +5,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.FrameLayout;
 
 import com.example.bottomnavlatihan.databinding.ActivityMainBinding;
 import com.example.bottomnavlatihan.fragment.List2dFragment;
@@ -23,7 +25,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         String fragmentName = getIntent().getStringExtra("fragment");
+        String username = getIntent().getStringExtra("username");
+        String email = getIntent().getStringExtra("email");
         Fragment fragment = null;
+
+        Fragment ProfileFragment = new ProfileFragment();
+        Bundle bundle = new Bundle();
+        bundle.putString("username", username);
+        bundle.putString("email", email);
+        ProfileFragment.setArguments(bundle);
 
         if ("list3d".equals(fragmentName)) {
             fragment = new List3dFragment();
@@ -48,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
 
             } else if (itemId == R.id.profile) {
 
-                replaceFragment(new ProfileFragment());
+                replaceFragment(ProfileFragment);
 
             }
 
